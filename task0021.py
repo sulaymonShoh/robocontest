@@ -1,0 +1,1 @@
+print(round(sum(list(map(int, input().split(' '))))/2))
