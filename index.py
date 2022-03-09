@@ -1,0 +1,1 @@
+for i in range(4, 50, 4): print(i)
