@@ -1,1 +1,6 @@
-print(round(sum(list(map(int, input().split(' '))))/2))
+a, b, c = map(int, input().split(' '))
+print(a, b, c)
+s = a+b+c
+if s%2 == 1:
+    print(round(s/2))
+# not ready
