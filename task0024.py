@@ -1,16 +1,13 @@
-a, b =  map(str, input().split('\n'))
-a, b = a.split(' '), b.split(' ')
-a, b = [int(x) for x in a], [int(x) for x in b]
+a = list(map(int, input().split()))
+b = list(map(int, input().split()))
 
-if max(a[0], b[0]) == a[0]:
-	a, b = b, a
+def time_interval(start, stop):
+	res = 0
+	hours = stop[0]-start[0]
+	mins = stop[1]-start[1]
+	seconds = stop[2]-start[2]
 
-rh = b[0]-a[0]
-rm = b[1]-a[1]
-if rm<0: rm = 60+rm
+	res = hours * 3600 + mins * 60 + seconds
+	return res
 
-rs = b[2]-a[2]
-if rs<0: rs = 60+rs
-
-wt = rh*3600 + rm*60 + rs
-print(wt)
+print(time_interval(a, b))

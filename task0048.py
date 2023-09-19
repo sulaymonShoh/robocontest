@@ -1,11 +1,9 @@
 n = int(input())
-step=1
-lst = list(range(1, 51))
-lst1 = []
-for i in lst:
-    if i==n: break
-    lst1 = lst[:step]
-    del lst[:step]
-    print(lst1)
-    step+=1
-# not completed
+a = 1
+
+for i in range(0, n):
+    for j in range(0, i+1):
+        print(f"{a}", end=' ')
+        a += 1
+    print()
+    
