@@ -1,5 +1,4 @@
 n = input()
-b = n.find("1")
-e = n.rfind("1")
-print(["YES", "NO"]["0" in n[b : e + 1]])
-# not finished
+l = n.index("1")
+r = n.rfind("1")
+print(["NO", "YES"]["0" in n[l : r + 1]])
